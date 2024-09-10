@@ -71,6 +71,30 @@
         .btn-primary a:hover {
             color: white;
         }
+
+        .footer-container {
+            background-color: #f0f1f3;
+            padding: 10px 0;
+        }
+
+        .footer-content {
+            max-width: 978px;
+            margin: auto;
+            padding: 0 15px;
+        }
+
+        .footer-select {
+            font-size: 11px;
+            height: 17px;
+        }
+
+        .footer-logo {
+            height: 30px;
+        }
+
+        .footer-address {
+            font-size: 12px;
+        }
     </style>
 </head>
 
@@ -214,16 +238,16 @@
                 </tr>
                 <tr>
                     <td>교양필수</td>
-                    <td>ITP20002</td>
-                    <td>Discrete Mathematics</td>
-                    <td>100%</td>
-                    <td>3</td>
-                    <td>02</td>
-                    <td>최희열</td>
-                    <td>월5,목5</td>
-                    <td>NTH 412</td>
+                    <td>GEK30001</td>
+                    <td>한동멘토링(오전)</td>
+                    <td>0%</td>
+                    <td>1</td>
+                    <td>01</td>
+                    <td>이경석</td>
+                    <td>금5</td>
+                    <td>HCA 103</td>
                     <td></td>
-                    <td>A+/F</td>
+                    <td>P/F</td>
                 </tr>
             </tbody>
         </table>
@@ -239,6 +263,45 @@
                 </tr>
             </tbody>
         </table>
+    </div>
+
+    <div class="footer-container">
+        <div class="footer-content">
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tbody>
+                    <tr>
+                        <td align="right" valign="middle">
+                            <img src="handong.svg" class="footer-logo" alt="Logo">
+                        </td>
+                        <td height="31" valign="middle" class="footer-address">
+                            경북 포항시 북구 흥해읍 한동로 558 한동대학교 37554
+                        </td>
+                        <td align="right" valign="bottom">
+                            <button type="button">
+                                업무별 담당자 내선정보
+                            </button>
+                        </td>
+                        <td align="right" valign="bottom">
+                            <select class="footer-select" onchange="newWin(this.value);">
+                                <option value="" selected="selected">Related Sites | 관련사이트</option>
+                                <option value="https://han.certpia.com/">인터넷증명발급센터</option>
+                                <option value="https://hised.handong.edu">한동교육개발센터</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="16"></td>
+                        <td height="16"></td>
+                        <td align="left" valign="top">
+                            <select class="footer-select" onchange="goBoard(this.value);">
+                                <option value="" selected="selected">선택</option>
+                                <option value="B0408">연구 관련 게시판</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </body>
 
