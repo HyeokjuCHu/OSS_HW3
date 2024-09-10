@@ -9,8 +9,43 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
-      
+        body {
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
 
+        header {
+            margin-bottom: 30px;
+        }
+
+        table {
+            margin: auto;
+            width: 90%;
+        }
+
+        th,
+        td {
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .tblcationTitlecls {
+            background-color: #e9ecef;
+            font-weight: bold;
+        }
+
+        .nav-pills .nav-link.active {
+            background-color: #007bff;
+        }
+
+        .btn-primary a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .btn-primary a:hover {
+            color: white;
+        }
     </style>
 </head>
 
@@ -19,378 +54,153 @@
         <header class="d-flex justify-content-center py-3">
             <ul class="nav nav-pills">
                 <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Index</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Add</a></li>
+                <li class="nav-item"><a href="add.html" class="nav-link">Add</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">View</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Edit</a></li>
             </ul>
         </header>
     </div>
 
-    <tbody>
-        <tr>
-            <td width="12" align="left">
-                <font color="#5075B3">▶</font>
-            </td>
-            <td width="99" align="left">
-                <font color="#5075B3">&nbsp;</font><b>
-                    <font color="#5075B3">Search</font>
-                </b>
-                <font color="#0000FF">:</font>
-            </td>
-            <td width="165" align="left">
-                <select size="1" name="hak_year">
-                    <option selected="" value="2024">2024</option>
-                    <option value="2021">2021</option>
-                    <option value="2024">2024</option>
-                </select>
-                <select size="1" name="hak_term">
-                    <option selected="" value="2">2</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">Summer</option>
-                    <option value="4">Winter</option>
-                </select>
-            </td>
-
-        </tr>
-
-    </tbody>
-
-    <div class="table-responsive small"></div>
-    <table class="table table-striped table-sm">
-        <tbody>
-            <tr height="40" bgcolor="#F7F7F7">
-                <td width="67" class="tblcationTitlecls">이수구분<br>Category</td>
-                <td width="67" class="tblcationTitlecls">과목코드<br>Code</td>
-                <td class="tblcationTitlecls">과목명<br>Course Title</td>
-                <td width="66" class="tblcationTitlecls">영어비율<br>Eng. Rate</td>
-                <td width="34" class="tblcationTitlecls">학점<br>Credits</td>
-                <td width="34" class="tblcationTitlecls">분반<br>Section</td>
-                <td width="77" class="tblcationTitlecls">담당교수<br>Professor</td>
-                <td width="87" class="tblcationTitlecls">수업시간<br>Period</td>
-                <td width="67" class="tblcationTitlecls">강의실<br>Classroom</td>
-                <td width="53" class="tblcationTitlecls">재이수<br>Retake</td>
-                <td width="43" class="tblcationTitlecls">유형<br>Type</td>
-            </tr>
-            <tr height="30" bgcolor="#FFFFFF">
-                <td align="center">
-                    <font color="#666666">전공선택</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">ECE20009</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">웹 서비스 개발</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">0%</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">3</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">03</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">&nbsp;장소연</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">&nbsp;화2,금2</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">&nbsp;NTH 412</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">&nbsp;</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">A+/F</font>
-                </td>
-            </tr>
-            <tr height="30" bgcolor="#F7F7F7">
-                <td align="center">
-                    <font color="#666666">전공필수</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">ECE20021</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">컴퓨터구조</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">0%</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">3</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">03</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">&nbsp;이강</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">&nbsp;월4,목4</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">&nbsp;NTH 220</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">&nbsp;</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">A+/F</font>
-                </td>
-            </tr>
-            <tr height="30" bgcolor="#FFFFFF">
-                <td align="center">
-                    <font color="#666666">전공선택</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">ECE20026</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">오픈소스 스튜디오</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">0%</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">3</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">02</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">&nbsp;장소연</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">&nbsp;월1,월2,목2</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">&nbsp;NTH 412</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">&nbsp;</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">A+/F</font>
-                </td>
-            </tr>
-            <tr height="30" bgcolor="#F7F7F7">
-                <td align="center">
-                    <font color="#666666">교양선택필수</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">GCS30017</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">EAP-Sciences</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">100%</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">3</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">05</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">&nbsp;Randlee Reddy</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">&nbsp;화6,금6</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">&nbsp;GLC 106</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">&nbsp;</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">A+/F</font>
-                </td>
-            </tr>
-            <tr height="30" bgcolor="#FFFFFF">
-                <td align="center">
-                    <font color="#666666">교양선택필수</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">GEK10046</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">사회봉사1</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">0%</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">1</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">01</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">&nbsp;전명희</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">&nbsp;</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">&nbsp;</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">&nbsp;</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">P/F</font>
-                </td>
-            </tr>
-            <tr height="30" bgcolor="#F7F7F7">
-                <td align="center">
-                    <font color="#666666">교양선택필수</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">GEK10082</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">선형대수학</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">100%</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">3</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">03</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">&nbsp;이한진</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">&nbsp;화4,금4</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">&nbsp;HDH 318</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">&nbsp;</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">A+/F</font>
-                </td>
-            </tr>
-            <tr height="30" bgcolor="#FFFFFF">
-                <td align="center">
-                    <font color="#666666">교양필수</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">GEK20002</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">채플(한국어) 4</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">0%</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">0</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">01</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">&nbsp;박은조외 5명</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">&nbsp;수5,수6,수7</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">&nbsp;HCA 효암본관</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">&nbsp;</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">P/F</font>
-                </td>
-            </tr>
-            <tr height="30" bgcolor="#F7F7F7">
-                <td align="center">
-                    <font color="#666666">교양필수</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">GEK20009</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">공동체리더십훈련4</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">0%</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">.5</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">01</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">&nbsp;</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">&nbsp;</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">&nbsp;</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">&nbsp;</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">P/F</font>
-                </td>
-            </tr>
-            <tr height="30" bgcolor="#FFFFFF">
-                <td align="center">
-                    <font color="#666666">교양필수</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">ITP20002</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">Discrete Mathematics</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">100%</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">3</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">02</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">&nbsp;최희열</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">&nbsp;월5,목5</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">&nbsp;NTH 412</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">&nbsp;</font>
-                </td>
-                <td align="center">
-                    <font color="#666666">A+/F</font>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    </div>
     <div class="container">
+        <table class="table table-striped table-sm">
+            <thead>
+                <tr height="40">
+                    <th width="67" class="tblcationTitlecls">이수구분<br>Category</th>
+                    <th width="67" class="tblcationTitlecls">과목코드<br>Code</th>
+                    <th class="tblcationTitlecls">과목명<br>Course Title</th>
+                    <th width="66" class="tblcationTitlecls">영어비율<br>Eng. Rate</th>
+                    <th width="34" class="tblcationTitlecls">학점<br>Credits</th>
+                    <th width="34" class="tblcationTitlecls">분반<br>Section</th>
+                    <th width="77" class="tblcationTitlecls">담당교수<br>Professor</th>
+                    <th width="87" class="tblcationTitlecls">수업시간<br>Period</th>
+                    <th width="67" class="tblcationTitlecls">강의실<br>Classroom</th>
+                    <th width="53" class="tblcationTitlecls">재이수<br>Retake</th>
+                    <th width="43" class="tblcationTitlecls">유형<br>Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>전공선택</td>
+                    <td>ECE20009</td>
+                    <td>웹 서비스 개발</td>
+                    <td>0%</td>
+                    <td>3</td>
+                    <td>03</td>
+                    <td>장소연</td>
+                    <td>화2,금2</td>
+                    <td>NTH 412</td>
+                    <td></td>
+                    <td>A+/F</td>
+                </tr>
+                <tr>
+                    <td>전공필수</td>
+                    <td>ECE20021</td>
+                    <td>컴퓨터구조</td>
+                    <td>0%</td>
+                    <td>3</td>
+                    <td>03</td>
+                    <td>이강</td>
+                    <td>월4,목4</td>
+                    <td>NTH 220</td>
+                    <td></td>
+                    <td>A+/F</td>
+                </tr>
+                <tr>
+                    <td>전공선택</td>
+                    <td>ECE20026</td>
+                    <td>오픈소스 스튜디오</td>
+                    <td>0%</td>
+                    <td>3</td>
+                    <td>02</td>
+                    <td>장소연</td>
+                    <td>월1,월2,목2</td>
+                    <td>NTH 412</td>
+                    <td></td>
+                    <td>A+/F</td>
+                </tr>
+                <tr>
+                    <td>교양선택필수</td>
+                    <td>GCS30017</td>
+                    <td>EAP-Sciences</td>
+                    <td>100%</td>
+                    <td>3</td>
+                    <td>05</td>
+                    <td>Randlee Reddy</td>
+                    <td>화6,금6</td>
+                    <td>GLC 106</td>
+                    <td></td>
+                    <td>A+/F</td>
+                </tr>
+                <tr>
+                    <td>교양선택필수</td>
+                    <td>GEK10046</td>
+                    <td>사회봉사1</td>
+                    <td>0%</td>
+                    <td>1</td>
+                    <td>01</td>
+                    <td>전명희</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>P/F</td>
+                </tr>
+                <tr>
+                    <td>교양선택필수</td>
+                    <td>GEK10082</td>
+                    <td>선형대수학</td>
+                    <td>100%</td>
+                    <td>3</td>
+                    <td>03</td>
+                    <td>이한진</td>
+                    <td>화4,금4</td>
+                    <td>HDH 318</td>
+                    <td></td>
+                    <td>A+/F</td>
+                </tr>
+                <tr>
+                    <td>교양필수</td>
+                    <td>GEK20002</td>
+                    <td>채플(한국어) 4</td>
+                    <td>0%</td>
+                    <td>0</td>
+                    <td>01</td>
+                    <td>박은조외 5명</td>
+                    <td>수5,수6,수7</td>
+                    <td>HCA 효암본관</td>
+                    <td></td>
+                    <td>P/F</td>
+                </tr>
+                <tr>
+                    <td>교양필수</td>
+                    <td>GEK20009</td>
+                    <td>공동체리더십훈련4</td>
+                    <td>0%</td>
+                    <td>.5</td>
+                    <td>01</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>P/F</td>
+                </tr>
+                <tr>
+                    <td>교양필수</td>
+                    <td>ITP20002</td>
+                    <td>Discrete Mathematics</td>
+                    <td>100%</td>
+                    <td>3</td>
+                    <td>02</td>
+                    <td>최희열</td>
+                    <td>월5,목5</td>
+                    <td>NTH 412</td>
+                    <td></td>
+                    <td>A+/F</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container text-center mt-4">
         <button type="button" class="btn btn-primary"><a href="add.html">Add</a></button>
     </div>
 </body>
