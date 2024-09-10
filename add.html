@@ -48,7 +48,8 @@
             </div>
             <div class="mb-3">
                 <label for="engRate" class="form-label">English Rate (영어비율)</label>
-                <input type="number" class="form-control" id="engRate" placeholder="Enter English rate (%)" min="0" max="100" required>
+                <input type="number" class="form-control" id="engRate" placeholder="Enter English rate (%)" min="0"
+                    max="100" required>
             </div>
             <div class="mb-3">
                 <label for="credits" class="form-label">Credits (학점)</label>
@@ -69,8 +70,7 @@
     <script>
         document.getElementById('addForm').addEventListener('submit', function (event) {
             event.preventDefault(); // Prevent form submission
-            
-            // Validation conditions
+
             const category = document.getElementById('category').value.trim();
             const code = document.getElementById('code').value.trim();
             const title = document.getElementById('title').value.trim();
@@ -83,7 +83,7 @@
                 alert('Category is required.');
                 return;
             }
-            
+
             if (!/^[A-Za-z0-9]{6,10}$/.test(code)) {
                 alert('Course Code must be between 6 to 10 alphanumeric characters.');
                 return;
@@ -114,7 +114,6 @@
                 return;
             }
 
-            // If all validations pass
             alert('게시물이 추가됩니다'); // Post is added
         });
     </script>
