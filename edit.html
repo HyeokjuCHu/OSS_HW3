@@ -7,6 +7,7 @@
     <title>Edit Record</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="my.css" rel="stylesheet">
     <style>
         body {
             background-color: #f8f9fa;
@@ -17,8 +18,59 @@
             margin-bottom: 30px;
         }
 
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        #logo {
+            position: absolute;
+            left: 0;
+        }
+
+        #banner {
+            margin: 0 auto;
+        }
+
+        #logo img {
+            height: 150px;
+        }
+
+        #banner img {
+            height: 200px;
+        }
+
         .btn-primary {
             margin-top: 20px;
+        }
+
+        .footer-container {
+            background-color: #f0f1f3;
+            padding: 10px 0;
+            margin-top: 30px;
+            /* Added margin to space footer from content */
+        }
+
+        .footer-content {
+            max-width: 978px;
+            margin: auto;
+            padding: 0 15px;
+        }
+
+        .footer-select {
+            font-size: 11px;
+            height: 17px;
+        }
+
+        .footer-logo {
+            height: 30px;
+        }
+
+        .footer-address {
+            font-size: 12px;
         }
     </style>
     <script>
@@ -27,7 +79,7 @@
             const title = document.getElementById('courseTitle').value.trim();
             const professor = document.getElementById('professor').value.trim();
             const credits = document.getElementById('credits').value.trim();
-            
+
             // Validation checks
             if (code === '' || title === '' || professor === '' || credits === '') {
                 alert('All fields are required.');
@@ -54,7 +106,10 @@
 </head>
 
 <body>
-    <div id="logo"><img src="handong.svg" height="150px"></div>
+    <div class="header-container">
+        <div id="logo"><img src="handong.svg" alt="Logo"></div>
+        <div id="banner"><img src="banner.jpg" alt="Banner"></div>
+    </div>
     <div class="container">
         <header class="d-flex justify-content-center py-3">
             <ul class="nav nav-pills">
@@ -70,9 +125,24 @@
         <h2 class="text-center">Edit Record</h2>
         <form onsubmit="return validateForm()" class="mt-4">
             <div class="mb-3">
-                <label for="courseCategory" class="form-label">Category</label>
-                <input type="text" class="form-control" id="courseCategory" value="전공선택" required>
+                <label for="category" class="form-label">Category (이수구분)</label>
+                <select class="form-select" id="category" required>
+                    <option value="전선">전선</option>
+                    <option value="실선">실선</option>
+                    <option value="실필">실필</option>
+                    <option value="교필">교필</option>
+                    <option value="교선">교선</option>
+                    <option value="공필">공필</option>
+                    <option value="전필">전필</option>
+                    <option value="부필">부필</option>
+                    <option value="부선">부선</option>
+                    <option value="자선">자선</option>
+                    <option value="전선필">전선필</option>
+                    <option value="교선필">교선필</option>
+                    <option value="공선">공선</option>
+                </select>
             </div>
+
             <div class="mb-3">
                 <label for="courseCode" class="form-label">Code</label>
                 <input type="text" class="form-control" id="courseCode" value="ECE20009" required>
@@ -111,11 +181,53 @@
             </div>
             <div class="mb-3">
                 <label for="type" class="form-label">Type</label>
-                <input type="text" class="form-control" id="type" value="A+/F">
+                <select class="form-select" id="type" required>
+                    <option value="A+/F">A+/F</option>
+                    <option value="P/F">P/F</option>
+                </select>
             </div>
 
             <button type="submit" class="btn btn-primary">Edit</button>
         </form>
+    </div>
+
+    <div class="footer-container"></div>
+    <div class="footer-content">
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tbody>
+                <tr>
+                    <td align="right" valign="middle">
+                        <img src="handong.svg" class="footer-logo" alt="Logo">
+                    </td>
+                    <td height="31" valign="middle" class="footer-address">
+                        경북 포항시 북구 흥해읍 한동로 558 한동대학교 37554
+                    </td>
+                    <td align="right" valign="bottom">
+                        <button type="button">
+                            업무별 담당자 내선정보
+                        </button>
+                    </td>
+                    <td align="right" valign="bottom">
+                        <select class="footer-select" onchange="newWin(this.value);">
+                            <option value="" selected="selected">Related Sites | 관련사이트</option>
+                            <option value="https://han.certpia.com/">인터넷증명발급센터</option>
+                            <option value="https://hised.handong.edu">한동교육개발센터</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="16"></td>
+                    <td height="16"></td>
+                    <td align="left" valign="top">
+                        <select class="footer-select" onchange="goBoard(this.value);">
+                            <option value="" selected="selected">선택</option>
+                            <option value="B0408">연구 관련 게시판</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
     </div>
 </body>
 
