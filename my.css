@@ -98,3 +98,70 @@ table {
         max-height: 200px;
     }
 }
+
+
+.footer-container {
+    background-color: #f0f1f3;
+    padding: 10px 0;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+
+
+.footer-content {
+    max-width: 978px;
+    margin: auto;
+    padding: 0 15px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+.footer-content table {
+    width: 100%;
+    margin: auto; /
+    padding: 5px; 
+}
+
+.footer-select {
+    font-size: 11px;
+    height: 25px;
+    margin: 5px 0; 
+    width: 150px;
+}
+
+.footer-logo {
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.footer-address {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .footer-container {
+        display: none; 
+    }
+}
+
+
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row; 
+        justify-content: space-between; 
+        align-items: center;
+    }
+
+    .footer-content table {
+        padding: 0;
+    }
+    
+    .footer-select {
+        margin: 0 10px;
+    }
+}
+
