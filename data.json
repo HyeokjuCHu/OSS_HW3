@@ -1,0 +1,51 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "Jerry",
+      "age": 20
+    },
+    {
+      "id": "2",
+      "name": "Tom",
+      "age": 18
+    },
+    {
+      "id": "3fc3",
+      "name": "John",
+      "age": "18"
+    },
+    {
+      "id": "a743",
+      "name": "Chu",
+      "age": "23"
+    },
+    {
+      "id": "2f59",
+      "name": "Hyeokju",
+      "age": "23"
+    },
+    {
+      "id": "1365",
+      "name": "Hyeokmin",
+      "age": "24"
+    },
+    {
+      "id": "8b00",
+      "name": "Hyeokju",
+      "age": "23"
+    }
+  ],
+  "courses": [
+    {
+      "id": "1",
+      "cname": "Open source studio",
+      "credit": 3
+    },
+    {
+      "id": "2",
+      "cname": "Programming studio",
+      "credit": 2
+    }
+  ]
+}
